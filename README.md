@@ -10,19 +10,19 @@
 
 create an auth object
 
-```python
+```
 from villaAuthSdk.auth import AuthSdk
 from nicHelper.dictUtil import printDict
 ```
 
-```python
+```
 authSdk=AuthSdk(user=None,pw=None,region='ap-southeast-1')
 ## user and pw here are the aws key/secret for your client
 ```
 
 ## login
 
-```python
+```
 result=authSdk.auth(user='nic1',pw='12345678')
 printDict(result)
 ```
@@ -43,7 +43,7 @@ printDict(result)
 
 ## Create new user
 
-```python
+```
 result=AuthSdk().createUser(user='nic5',phone='+66828773682',pw='12345678',name='nic3')
 printDict(result)
 ```

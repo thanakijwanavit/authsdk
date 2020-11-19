@@ -15,15 +15,16 @@ class AuthSdk:
     self,
     user = None,
     pw = None,
+    sessionToken = None,
     region = 'ap-southeast-1'
     ):
-    self.lambda_ = Lambda(user = user, pw = pw, region = region)
+    self.lambda_ = Lambda(user = user, pw = pw, sessionToken= sessionToken, region = region)
 
   def generalInvoke(self, body={}, functionName= ''):
     event = Event.getInput(body=body)
     response = self.lambda_.invoke(functionName=functionName, input=event)
     try: return Response.parseBody(response)
-    except: return errorString()
+    except: return response
 
 
 # Cell
