@@ -10,19 +10,19 @@
 
 create an auth object
 
-```python
+```
 from villaAuthSdk.auth import AuthSdk
 from nicHelper.dictUtil import printDict
 ```
 
-```python
+```
 sdk=AuthSdk(user=None,pw=None,region='ap-southeast-1')
 ## user and pw here are the aws key/secret for your client
 ```
 
 ## Create cashier
 
-```python
+```
 sdk.createCashier({
   'user': 'nic1',
   'phone': '+66816684442',
@@ -53,7 +53,7 @@ sdk.createCashier({
 
 ## login
 
-```python
+```
 result = sdk.auth(user='nic1',pw='12345678')
 printDict(result)
 ```
@@ -99,7 +99,7 @@ printDict(result)
 # Confirm
 confirm phone/email
 
-```python
+```
 result=sdk.confirm(user='nic1', code= '123')
 printDict(result)
 ```
@@ -111,7 +111,7 @@ printDict(result)
 
 ## Get Profile
 
-```python
+```
 result=sdk.getProfile('nic1')
 printDict(result)
 ```
@@ -143,7 +143,7 @@ printDict(result)
 
 ## update Profile
 
-```python
+```
 result = sdk.updateProfile(
   user= 'nic1',
   attributes= {
@@ -179,7 +179,7 @@ printDict(result)
 
 ## set password
 
-```python
+```
 sdk.setPassword(user='nic1',pw='12345678')
 ```
 
@@ -200,7 +200,7 @@ sdk.setPassword(user='nic1',pw='12345678')
 ## Unauth
 get unauthenticated credentials
 
-```python
+```
 result = sdk.unauth()
 printDict(result)
 ```
@@ -213,7 +213,7 @@ printDict(result)
 
 ## DeleteUser
 
-```python
+```
 result = sdk.deleteUser(user='nic1')
 printDict(result)
 ```

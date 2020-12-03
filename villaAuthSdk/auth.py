@@ -47,7 +47,7 @@ class AuthSdk:
 @dataclass
 class CreateCashier:
   user: str
-  phone: str
+  phone_number: str
   pw: str
   name: str
   cashierCode: str
