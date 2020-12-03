@@ -63,10 +63,10 @@ def createCashier(self,data={}, function= 'createCashier'):
 @dataclass
 class Auth:
   user: str
-  password: str
+  pw: str
 @add_method(AuthSdk)
 def auth(self,user,pw, function= 'auth'):
-  payload = Auth(user=user, password=pw).to_dict()
+  payload = Auth(user=user, pw=pw).to_dict()
   return self.generalInvoke(body=payload,function=function)
 
 # Cell
