@@ -47,7 +47,7 @@ nb_path: "authSdk.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h2 id="FunctionName" class="doc_header"><code>class</code> <code>FunctionName</code><a href="https://github.com/thanakijwanavit/pynamologger/tree/master/villaAuthSdk/auth.py#L17" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>FunctionName</code>(<strong><code>branch</code></strong>, <strong><code>appName</code></strong>)</p>
+<h2 id="FunctionName" class="doc_header"><code>class</code> <code>FunctionName</code><a href="https://github.com/thanakijwanavit/pynamologger/tree/master/villaAuthSdk/auth.py#L18" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>FunctionName</code>(<strong><code>branch</code></strong>, <strong><code>appName</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -71,7 +71,7 @@ nb_path: "authSdk.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h2 id="AuthSdk" class="doc_header"><code>class</code> <code>AuthSdk</code><a href="https://github.com/thanakijwanavit/pynamologger/tree/master/villaAuthSdk/auth.py#L23" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>AuthSdk</code>(<strong><code>user</code></strong>=<em><code>None</code></em>, <strong><code>pw</code></strong>=<em><code>None</code></em>, <strong><code>sessionToken</code></strong>=<em><code>None</code></em>, <strong><code>region</code></strong>=<em><code>'ap-southeast-1'</code></em>, <strong><code>branch</code></strong>=<em><code>'dev-blank'</code></em>, <strong><code>appName</code></strong>=<em><code>'villa-employee'</code></em>)</p>
+<h2 id="AuthSdk" class="doc_header"><code>class</code> <code>AuthSdk</code><a href="https://github.com/thanakijwanavit/pynamologger/tree/master/villaAuthSdk/auth.py#L24" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>AuthSdk</code>(<strong><code>user</code></strong>=<em><code>None</code></em>, <strong><code>pw</code></strong>=<em><code>None</code></em>, <strong><code>sessionToken</code></strong>=<em><code>None</code></em>, <strong><code>region</code></strong>=<em><code>'ap-southeast-1'</code></em>, <strong><code>branch</code></strong>=<em><code>'dev-blank'</code></em>, <strong><code>appName</code></strong>=<em><code>'villa-employee'</code></em>)</p>
 </blockquote>
 
 </div>
@@ -102,10 +102,10 @@ nb_path: "authSdk.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h2 id="CreateCashier" class="doc_header"><code>class</code> <code>CreateCashier</code><a href="https://github.com/thanakijwanavit/pynamologger/tree/master/villaAuthSdk/auth.py#L47" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>CreateCashier</code>(<strong><code>user</code></strong>:<code>str</code>, <strong><code>phone</code></strong>:<code>str</code>, <strong><code>pw</code></strong>:<code>str</code>, <strong><code>name</code></strong>:<code>str</code>, <strong><code>cashierId</code></strong>:<code>str</code>)</p>
+<h2 id="CreateCashier" class="doc_header"><code>class</code> <code>CreateCashier</code><a href="https://github.com/thanakijwanavit/pynamologger/tree/master/villaAuthSdk/auth.py#L48" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>CreateCashier</code>(<strong><code>user</code></strong>:<code>str</code>, <strong><code>phone</code></strong>:<code>str</code>, <strong><code>pw</code></strong>:<code>str</code>, <strong><code>name</code></strong>:<code>str</code>, <strong><code>cashierCode</code></strong>:<code>str</code>, <strong><code>email</code></strong>:<code>Optional</code>[<code>str</code>]=<em><code>None</code></em>)</p>
 </blockquote>
 
-<pre><code>CreateCashier(user: str, phone: str, pw: str, name: str, cashierId: str)</code></pre>
+<pre><code>CreateCashier(user: str, phone: str, pw: str, name: str, cashierCode: str, email: Union[str, NoneType] = None)</code></pre>
 
 </div>
 
@@ -128,7 +128,7 @@ nb_path: "authSdk.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="createCashier" class="doc_header"><code>createCashier</code><a href="https://github.com/thanakijwanavit/pynamologger/tree/master/villaAuthSdk/auth.py#L54" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>createCashier</code>(<strong><code>data</code></strong>=<em><code>{}</code></em>, <strong><code>function</code></strong>=<em><code>'createCashier'</code></em>)</p>
+<h4 id="createCashier" class="doc_header"><code>createCashier</code><a href="https://github.com/thanakijwanavit/pynamologger/tree/master/villaAuthSdk/auth.py#L56" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>createCashier</code>(<strong><code>data</code></strong>=<em><code>{}</code></em>, <strong><code>function</code></strong>=<em><code>'createCashier'</code></em>)</p>
 </blockquote>
 
 </div>
@@ -160,7 +160,8 @@ nb_path: "authSdk.ipynb"
   <span class="s1">&#39;phone&#39;</span><span class="p">:</span> <span class="s1">&#39;+66816684442&#39;</span><span class="p">,</span>
   <span class="s1">&#39;pw&#39;</span><span class="p">:</span> <span class="s1">&#39;12345678&#39;</span><span class="p">,</span>
   <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;nic&#39;</span><span class="p">,</span>
-  <span class="s1">&#39;cashierId&#39;</span><span class="p">:</span> <span class="s1">&#39;001&#39;</span>
+  <span class="s1">&#39;cashierCode&#39;</span><span class="p">:</span> <span class="s1">&#39;001&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;email&#39;</span><span class="p">:</span> <span class="s1">&#39;test@gmail.com&#39;</span>
 <span class="p">})</span>
 </pre></div>
 
@@ -176,7 +177,18 @@ nb_path: "authSdk.ipynb"
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>{&#39;error&#39;: {&#39;success&#39;: False, &#39;error&#39;: &#39;user exists&#39;}}</pre>
+<pre>{&#39;success&#39;: True,
+ &#39;user&#39;: &#39;nic1&#39;,
+ &#39;phone&#39;: &#39;+66816684442&#39;,
+ &#39;pw&#39;: &#39;12345678&#39;,
+ &#39;name&#39;: &#39;nic&#39;,
+ &#39;cashierCode&#39;: &#39;001&#39;,
+ &#39;email&#39;: &#39;test@gmail.com&#39;,
+ &#39;body&#39;: &#39;{&#34;error&#34;:&#34;error updating An error occurred (AccessDeniedException) when calling the AdminUpdateUserAttributes operation: User: arn:aws:sts::394922924679:assumed-role\\/villaAuth-CreateCashierRole-VIHI2IVRWMHH\\/villa-employee-dev-blank-createCashier is not authorized to perform: cognito-idp:AdminUpdateUserAttributes on resource: arn:aws:cognito-idp:ap-southeast-1:394922924679:userpool\\/ap-southeast-1_QMI1IzkEx&#34;}&#39;,
+ &#39;statusCode&#39;: 400,
+ &#39;headers&#39;: {&#39;Access-Control-Allow-Headers&#39;: &#39;*&#39;,
+  &#39;Access-Control-Allow-Origin&#39;: &#39;*&#39;,
+  &#39;Access-Control-Allow-Methods&#39;: &#39;*&#39;}}</pre>
 </div>
 
 </div>
@@ -198,7 +210,7 @@ nb_path: "authSdk.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h2 id="Auth" class="doc_header"><code>class</code> <code>Auth</code><a href="https://github.com/thanakijwanavit/pynamologger/tree/master/villaAuthSdk/auth.py#L62" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>Auth</code>(<strong><code>user</code></strong>:<code>str</code>, <strong><code>password</code></strong>:<code>str</code>)</p>
+<h2 id="Auth" class="doc_header"><code>class</code> <code>Auth</code><a href="https://github.com/thanakijwanavit/pynamologger/tree/master/villaAuthSdk/auth.py#L64" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>Auth</code>(<strong><code>user</code></strong>:<code>str</code>, <strong><code>password</code></strong>:<code>str</code>)</p>
 </blockquote>
 
 <pre><code>Auth(user: str, password: str)</code></pre>
@@ -224,7 +236,7 @@ nb_path: "authSdk.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="auth" class="doc_header"><code>auth</code><a href="https://github.com/thanakijwanavit/pynamologger/tree/master/villaAuthSdk/auth.py#L65" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>auth</code>(<strong><code>user</code></strong>, <strong><code>pw</code></strong>, <strong><code>function</code></strong>=<em><code>'auth'</code></em>)</p>
+<h4 id="auth" class="doc_header"><code>auth</code><a href="https://github.com/thanakijwanavit/pynamologger/tree/master/villaAuthSdk/auth.py#L67" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>auth</code>(<strong><code>user</code></strong>, <strong><code>pw</code></strong>, <strong><code>function</code></strong>=<em><code>'auth'</code></em>)</p>
 </blockquote>
 
 </div>
@@ -266,9 +278,9 @@ nb_path: "authSdk.ipynb"
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>AccessKeyId : ASIAVX4Z5T
-SecretKey : APCDWUXQHN
+SecretKey : HvnadpJUKc
 SessionToken : IQoJb3JpZ2
-Expiration : 1606982179.0
+Expiration : 1606998927.0
 AccessToken : eyJraWQiOi
 ExpiresIn : 3600
 TokenType : Bearer
@@ -279,24 +291,23 @@ NewDeviceMetadata
  DeviceGroupKey : -lt0cpemm
 userInfo
  Username : nic1
- UserCreateDate : 1606963203.881
- UserLastModifiedDate : 1606978253.219
+ UserCreateDate : 1606995325.992
+ UserLastModifiedDate : 1606995325.992
  Enabled : True
  UserStatus : CONFIRMED
  ResponseMetadata
-  RequestId : 8ee58d45-5
+  RequestId : eb486e0d-8
   HTTPStatusCode : 200
   HTTPHeaders
    date : Thu, 03 De
    content-type : applicatio
-   content-length : 384
+   content-length : 339
    connection : keep-alive
-   x-amzn-requestid : 8ee58d45-5
+   x-amzn-requestid : eb486e0d-8
   RetryAttempts : 0
 kwUserAttrib
- sub : d7ca5125-6
+ sub : 33cde0e8-6
  name : nic
- custom:cashierCode : 1234
  phone_number_verified : true
  phone_number : +668166844
 </pre>
@@ -327,7 +338,7 @@ kwUserAttrib
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h2 id="Confirm" class="doc_header"><code>class</code> <code>Confirm</code><a href="https://github.com/thanakijwanavit/pynamologger/tree/master/villaAuthSdk/auth.py#L73" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>Confirm</code>(<strong><code>user</code></strong>:<code>str</code>, <strong><code>code</code></strong>:<code>str</code>)</p>
+<h2 id="Confirm" class="doc_header"><code>class</code> <code>Confirm</code><a href="https://github.com/thanakijwanavit/pynamologger/tree/master/villaAuthSdk/auth.py#L75" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>Confirm</code>(<strong><code>user</code></strong>:<code>str</code>, <strong><code>code</code></strong>:<code>str</code>)</p>
 </blockquote>
 
 <pre><code>Confirm(user: str, code: str)</code></pre>
@@ -353,7 +364,7 @@ kwUserAttrib
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="confirm" class="doc_header"><code>confirm</code><a href="https://github.com/thanakijwanavit/pynamologger/tree/master/villaAuthSdk/auth.py#L76" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>confirm</code>(<strong><code>user</code></strong>:<code>str</code>, <strong><code>code</code></strong>:<code>str</code>, <strong><code>function</code></strong>:<code>str</code>=<em><code>'confirm'</code></em>, <strong>**<code>kwargs</code></strong>)</p>
+<h4 id="confirm" class="doc_header"><code>confirm</code><a href="https://github.com/thanakijwanavit/pynamologger/tree/master/villaAuthSdk/auth.py#L78" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>confirm</code>(<strong><code>user</code></strong>:<code>str</code>, <strong><code>code</code></strong>:<code>str</code>, <strong><code>function</code></strong>:<code>str</code>=<em><code>'confirm'</code></em>, <strong>**<code>kwargs</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -418,7 +429,7 @@ kwUserAttrib
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h2 id="GetProfile" class="doc_header"><code>class</code> <code>GetProfile</code><a href="https://github.com/thanakijwanavit/pynamologger/tree/master/villaAuthSdk/auth.py#L84" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>GetProfile</code>(<strong><code>user</code></strong>:<code>str</code>)</p>
+<h2 id="GetProfile" class="doc_header"><code>class</code> <code>GetProfile</code><a href="https://github.com/thanakijwanavit/pynamologger/tree/master/villaAuthSdk/auth.py#L86" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>GetProfile</code>(<strong><code>user</code></strong>:<code>str</code>)</p>
 </blockquote>
 
 <pre><code>GetProfile(user: str)</code></pre>
@@ -444,7 +455,7 @@ kwUserAttrib
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="getProfile" class="doc_header"><code>getProfile</code><a href="https://github.com/thanakijwanavit/pynamologger/tree/master/villaAuthSdk/auth.py#L87" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>getProfile</code>(<strong><code>user</code></strong>:<code>str</code>, <strong><code>function</code></strong>:<code>str</code>=<em><code>'getProfile'</code></em>, <strong>**<code>kwargs</code></strong>)</p>
+<h4 id="getProfile" class="doc_header"><code>getProfile</code><a href="https://github.com/thanakijwanavit/pynamologger/tree/master/villaAuthSdk/auth.py#L89" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>getProfile</code>(<strong><code>user</code></strong>:<code>str</code>, <strong><code>function</code></strong>:<code>str</code>=<em><code>'getProfile'</code></em>, <strong>**<code>kwargs</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -487,24 +498,23 @@ kwUserAttrib
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Username : nic1
 UserAttributes
- sub : d7ca5125-6
+ sub : 33cde0e8-6
  name : nic
- custom:cashierCode : 1234
  phone_number_verified : true
  phone_number : +668166844
-UserCreateDate : 1606963203.881
-UserLastModifiedDate : 1606977796.225
+UserCreateDate : 1606995325.992
+UserLastModifiedDate : 1606995325.992
 Enabled : True
 UserStatus : CONFIRMED
 ResponseMetadata
- RequestId : 263aff07-3
+ RequestId : 45bdb065-0
  HTTPStatusCode : 200
  HTTPHeaders
   date : Thu, 03 De
   content-type : applicatio
-  content-length : 384
+  content-length : 339
   connection : keep-alive
-  x-amzn-requestid : 263aff07-3
+  x-amzn-requestid : 45bdb065-0
  RetryAttempts : 0
 </pre>
 </div>
@@ -527,7 +537,7 @@ ResponseMetadata
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h2 id="UpdateProfile" class="doc_header"><code>class</code> <code>UpdateProfile</code><a href="https://github.com/thanakijwanavit/pynamologger/tree/master/villaAuthSdk/auth.py#L95" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>UpdateProfile</code>(<strong><code>user</code></strong>:<code>str</code>, <strong><code>attributes</code></strong>:<code>dict</code>)</p>
+<h2 id="UpdateProfile" class="doc_header"><code>class</code> <code>UpdateProfile</code><a href="https://github.com/thanakijwanavit/pynamologger/tree/master/villaAuthSdk/auth.py#L97" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>UpdateProfile</code>(<strong><code>user</code></strong>:<code>str</code>, <strong><code>attributes</code></strong>:<code>dict</code>)</p>
 </blockquote>
 
 <pre><code>UpdateProfile(user: str, attributes: dict)</code></pre>
@@ -553,7 +563,7 @@ ResponseMetadata
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="updateProfile" class="doc_header"><code>updateProfile</code><a href="https://github.com/thanakijwanavit/pynamologger/tree/master/villaAuthSdk/auth.py#L99" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>updateProfile</code>(<strong><code>user</code></strong>:<code>str</code>, <strong><code>attributes</code></strong>:<code>dict</code>, <strong><code>function</code></strong>:<code>str</code>=<em><code>'updateProfile'</code></em>, <strong>**<code>kwargs</code></strong>)</p>
+<h4 id="updateProfile" class="doc_header"><code>updateProfile</code><a href="https://github.com/thanakijwanavit/pynamologger/tree/master/villaAuthSdk/auth.py#L101" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>updateProfile</code>(<strong><code>user</code></strong>:<code>str</code>, <strong><code>attributes</code></strong>:<code>dict</code>, <strong><code>function</code></strong>:<code>str</code>=<em><code>'updateProfile'</code></em>, <strong>**<code>kwargs</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -601,24 +611,24 @@ ResponseMetadata
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Username : nic1
 UserAttributes
- sub : d7ca5125-6
+ sub : 33cde0e8-6
  name : nic
  custom:cashierCode : 1234
  phone_number_verified : true
  phone_number : +668166844
-UserCreateDate : 1606963203.881
-UserLastModifiedDate : 1606978149.418
+UserCreateDate : 1606995325.992
+UserLastModifiedDate : 1606995328.322
 Enabled : True
 UserStatus : CONFIRMED
 ResponseMetadata
- RequestId : 442f9a54-2
+ RequestId : b2d28a55-6
  HTTPStatusCode : 200
  HTTPHeaders
   date : Thu, 03 De
   content-type : applicatio
   content-length : 384
   connection : keep-alive
-  x-amzn-requestid : 442f9a54-2
+  x-amzn-requestid : b2d28a55-6
  RetryAttempts : 0
 </pre>
 </div>
@@ -641,7 +651,7 @@ ResponseMetadata
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h2 id="SetPassword" class="doc_header"><code>class</code> <code>SetPassword</code><a href="https://github.com/thanakijwanavit/pynamologger/tree/master/villaAuthSdk/auth.py#L107" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>SetPassword</code>(<strong><code>user</code></strong>:<code>str</code>, <strong><code>pw</code></strong>:<code>str</code>)</p>
+<h2 id="SetPassword" class="doc_header"><code>class</code> <code>SetPassword</code><a href="https://github.com/thanakijwanavit/pynamologger/tree/master/villaAuthSdk/auth.py#L109" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>SetPassword</code>(<strong><code>user</code></strong>:<code>str</code>, <strong><code>pw</code></strong>:<code>str</code>)</p>
 </blockquote>
 
 <pre><code>SetPassword(user: str, pw: str)</code></pre>
@@ -667,7 +677,7 @@ ResponseMetadata
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="setPassword" class="doc_header"><code>setPassword</code><a href="https://github.com/thanakijwanavit/pynamologger/tree/master/villaAuthSdk/auth.py#L111" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>setPassword</code>(<strong><code>user</code></strong>:<code>str</code>, <strong><code>pw</code></strong>:<code>str</code>, <strong><code>function</code></strong>:<code>str</code>=<em><code>'setPassword'</code></em>, <strong>**<code>kwargs</code></strong>)</p>
+<h4 id="setPassword" class="doc_header"><code>setPassword</code><a href="https://github.com/thanakijwanavit/pynamologger/tree/master/villaAuthSdk/auth.py#L113" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>setPassword</code>(<strong><code>user</code></strong>:<code>str</code>, <strong><code>pw</code></strong>:<code>str</code>, <strong><code>function</code></strong>:<code>str</code>=<em><code>'setPassword'</code></em>, <strong>**<code>kwargs</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -709,13 +719,13 @@ ResponseMetadata
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>{&#39;ResponseMetadata&#39;: {&#39;RequestId&#39;: &#39;323fd8b0-0aed-479c-9be5-588089a2970d&#39;,
+<pre>{&#39;ResponseMetadata&#39;: {&#39;RequestId&#39;: &#39;e535427f-52d0-4218-848e-c386e43dc058&#39;,
   &#39;HTTPStatusCode&#39;: 200,
-  &#39;HTTPHeaders&#39;: {&#39;date&#39;: &#39;Thu, 03 Dec 2020 06:50:53 GMT&#39;,
+  &#39;HTTPHeaders&#39;: {&#39;date&#39;: &#39;Thu, 03 Dec 2020 11:35:28 GMT&#39;,
    &#39;content-type&#39;: &#39;application/x-amz-json-1.1&#39;,
    &#39;content-length&#39;: &#39;2&#39;,
    &#39;connection&#39;: &#39;keep-alive&#39;,
-   &#39;x-amzn-requestid&#39;: &#39;323fd8b0-0aed-479c-9be5-588089a2970d&#39;},
+   &#39;x-amzn-requestid&#39;: &#39;e535427f-52d0-4218-848e-c386e43dc058&#39;},
   &#39;RetryAttempts&#39;: 0}}</pre>
 </div>
 
@@ -738,7 +748,7 @@ ResponseMetadata
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="unauth" class="doc_header"><code>unauth</code><a href="https://github.com/thanakijwanavit/pynamologger/tree/master/villaAuthSdk/auth.py#L117" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>unauth</code>(<strong><code>function</code></strong>:<code>str</code>=<em><code>'unauth'</code></em>, <strong>**<code>kwargs</code></strong>)</p>
+<h4 id="unauth" class="doc_header"><code>unauth</code><a href="https://github.com/thanakijwanavit/pynamologger/tree/master/villaAuthSdk/auth.py#L119" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>unauth</code>(<strong><code>function</code></strong>:<code>str</code>=<em><code>'unauth'</code></em>, <strong>**<code>kwargs</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -780,9 +790,9 @@ ResponseMetadata
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>AccessKeyId : ASIAVX4Z5T
-SecretKey : wW377g9c54
+SecretKey : +vyrk50YdD
 SessionToken : IQoJb3JpZ2
-Expiration : 1606981946.0
+Expiration : 1606998928.0
 </pre>
 </div>
 </div>
@@ -804,7 +814,7 @@ Expiration : 1606981946.0
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h2 id="DeleteUser" class="doc_header"><code>class</code> <code>DeleteUser</code><a href="https://github.com/thanakijwanavit/pynamologger/tree/master/villaAuthSdk/auth.py#L124" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>DeleteUser</code>(<strong><code>user</code></strong>:<code>str</code>)</p>
+<h2 id="DeleteUser" class="doc_header"><code>class</code> <code>DeleteUser</code><a href="https://github.com/thanakijwanavit/pynamologger/tree/master/villaAuthSdk/auth.py#L126" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>DeleteUser</code>(<strong><code>user</code></strong>:<code>str</code>)</p>
 </blockquote>
 
 <pre><code>DeleteUser(user: str)</code></pre>
@@ -830,7 +840,7 @@ Expiration : 1606981946.0
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="deleteUser" class="doc_header"><code>deleteUser</code><a href="https://github.com/thanakijwanavit/pynamologger/tree/master/villaAuthSdk/auth.py#L127" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>deleteUser</code>(<strong><code>user</code></strong>:<code>str</code>, <strong><code>function</code></strong>:<code>str</code>=<em><code>'deleteUser'</code></em>, <strong>**<code>kwargs</code></strong>)</p>
+<h4 id="deleteUser" class="doc_header"><code>deleteUser</code><a href="https://github.com/thanakijwanavit/pynamologger/tree/master/villaAuthSdk/auth.py#L129" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>deleteUser</code>(<strong><code>user</code></strong>:<code>str</code>, <strong><code>function</code></strong>:<code>str</code>=<em><code>'deleteUser'</code></em>, <strong>**<code>kwargs</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -872,13 +882,13 @@ Expiration : 1606981946.0
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>{&#39;ResponseMetadata&#39;: {&#39;RequestId&#39;: &#39;656f90bd-4a09-4101-be3a-c8ac0627ed39&#39;,
+<pre>{&#39;ResponseMetadata&#39;: {&#39;RequestId&#39;: &#39;6c35e8ac-4426-4b06-82d5-528705afc783&#39;,
   &#39;HTTPStatusCode&#39;: 200,
-  &#39;HTTPHeaders&#39;: {&#39;date&#39;: &#39;Thu, 03 Dec 2020 07:05:51 GMT&#39;,
+  &#39;HTTPHeaders&#39;: {&#39;date&#39;: &#39;Thu, 03 Dec 2020 11:35:28 GMT&#39;,
    &#39;content-type&#39;: &#39;application/x-amz-json-1.1&#39;,
    &#39;content-length&#39;: &#39;0&#39;,
    &#39;connection&#39;: &#39;keep-alive&#39;,
-   &#39;x-amzn-requestid&#39;: &#39;656f90bd-4a09-4101-be3a-c8ac0627ed39&#39;},
+   &#39;x-amzn-requestid&#39;: &#39;6c35e8ac-4426-4b06-82d5-528705afc783&#39;},
   &#39;RetryAttempts&#39;: 0}}</pre>
 </div>
 

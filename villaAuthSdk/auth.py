@@ -12,6 +12,7 @@ from nicHelper.dictUtil import printDict
 from nicHelper.exception import errorString
 from dataclasses import dataclass
 from dataclasses_json import dataclass_json
+from typing import Optional
 
 # Cell
 class FunctionName:
@@ -49,7 +50,8 @@ class CreateCashier:
   phone: str
   pw: str
   name: str
-  cashierId: str
+  cashierCode: str
+  email: Optional[str] = None
 
 @add_method(AuthSdk)
 def createCashier(self,data={}, function= 'createCashier'):

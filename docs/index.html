@@ -109,7 +109,8 @@ nb_path: "index.ipynb"
   <span class="s1">&#39;phone&#39;</span><span class="p">:</span> <span class="s1">&#39;+66816684442&#39;</span><span class="p">,</span>
   <span class="s1">&#39;pw&#39;</span><span class="p">:</span> <span class="s1">&#39;12345678&#39;</span><span class="p">,</span>
   <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;nic&#39;</span><span class="p">,</span>
-  <span class="s1">&#39;cashierId&#39;</span><span class="p">:</span> <span class="s1">&#39;001&#39;</span>
+  <span class="s1">&#39;cashierCode&#39;</span><span class="p">:</span> <span class="s1">&#39;001&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;email&#39;</span><span class="p">:</span> <span class="s1">&#39;test@gmail.com&#39;</span>
 <span class="p">})</span>
 </pre></div>
 
@@ -130,7 +131,13 @@ nb_path: "index.ipynb"
  &#39;phone&#39;: &#39;+66816684442&#39;,
  &#39;pw&#39;: &#39;12345678&#39;,
  &#39;name&#39;: &#39;nic&#39;,
- &#39;cashierId&#39;: &#39;001&#39;}</pre>
+ &#39;cashierCode&#39;: &#39;001&#39;,
+ &#39;email&#39;: &#39;test@gmail.com&#39;,
+ &#39;body&#39;: &#39;{&#34;Username&#34;:&#34;nic1&#34;,&#34;UserAttributes&#34;:{&#34;sub&#34;:&#34;f5aa60ba-0f65-45f3-b8f7-2a064e7e5311&#34;,&#34;email_verified&#34;:&#34;false&#34;,&#34;name&#34;:&#34;nic&#34;,&#34;custom:cashierCode&#34;:&#34;001&#34;,&#34;phone_number_verified&#34;:&#34;true&#34;,&#34;phone_number&#34;:&#34;+66816684442&#34;,&#34;email&#34;:&#34;test@gmail.com&#34;},&#34;UserCreateDate&#34;:1606995525.734,&#34;UserLastModifiedDate&#34;:1606995525.988,&#34;Enabled&#34;:true,&#34;UserStatus&#34;:&#34;CONFIRMED&#34;,&#34;ResponseMetadata&#34;:{&#34;RequestId&#34;:&#34;6b2010b5-aabc-4d36-8e3e-0234da56f3ab&#34;,&#34;HTTPStatusCode&#34;:200,&#34;HTTPHeaders&#34;:{&#34;date&#34;:&#34;Thu, 03 Dec 2020 11:38:46 GMT&#34;,&#34;content-type&#34;:&#34;application\\/x-amz-json-1.1&#34;,&#34;content-length&#34;:&#34;467&#34;,&#34;connection&#34;:&#34;keep-alive&#34;,&#34;x-amzn-requestid&#34;:&#34;6b2010b5-aabc-4d36-8e3e-0234da56f3ab&#34;},&#34;RetryAttempts&#34;:0}}&#39;,
+ &#39;statusCode&#39;: 200,
+ &#39;headers&#39;: {&#39;Access-Control-Allow-Headers&#39;: &#39;*&#39;,
+  &#39;Access-Control-Allow-Origin&#39;: &#39;*&#39;,
+  &#39;Access-Control-Allow-Methods&#39;: &#39;*&#39;}}</pre>
 </div>
 
 </div>
@@ -162,6 +169,55 @@ nb_path: "index.ipynb"
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>AccessKeyId : ASIAVX4Z5T
+SecretKey : zTt7RyFFji
+SessionToken : IQoJb3JpZ2
+Expiration : 1606999129.0
+AccessToken : eyJraWQiOi
+ExpiresIn : 3600
+TokenType : Bearer
+RefreshToken : eyJjdHkiOi
+IdToken : eyJraWQiOi
+NewDeviceMetadata
+ DeviceKey : ap-southea
+ DeviceGroupKey : -lt0cpemm
+userInfo
+ Username : nic1
+ UserCreateDate : 1606995525.734
+ UserLastModifiedDate : 1606995525.988
+ Enabled : True
+ UserStatus : CONFIRMED
+ ResponseMetadata
+  RequestId : 44425d05-8
+  HTTPStatusCode : 200
+  HTTPHeaders
+   date : Thu, 03 De
+   content-type : applicatio
+   content-length : 467
+   connection : keep-alive
+   x-amzn-requestid : 44425d05-8
+  RetryAttempts : 0
+kwUserAttrib
+ sub : f5aa60ba-0
+ email_verified : false
+ name : nic
+ custom:cashierCode : 001
+ phone_number_verified : true
+ phone_number : +668166844
+ email : test@gmail
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     {% endraw %}
 
@@ -187,6 +243,22 @@ nb_path: "index.ipynb"
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>error
+ pickledb64string : gASVTQUAAA
+ error : confirmati
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     {% endraw %}
 
@@ -208,6 +280,42 @@ nb_path: "index.ipynb"
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Username : nic1
+UserAttributes
+ sub : f5aa60ba-0
+ email_verified : false
+ name : nic
+ custom:cashierCode : 001
+ phone_number_verified : true
+ phone_number : +668166844
+ email : test@gmail
+UserCreateDate : 1606995525.734
+UserLastModifiedDate : 1606995525.988
+Enabled : True
+UserStatus : CONFIRMED
+ResponseMetadata
+ RequestId : 85a734ac-2
+ HTTPStatusCode : 200
+ HTTPHeaders
+  date : Thu, 03 De
+  content-type : applicatio
+  content-length : 467
+  connection : keep-alive
+  x-amzn-requestid : 85a734ac-2
+ RetryAttempts : 0
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -239,6 +347,42 @@ nb_path: "index.ipynb"
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Username : nic1
+UserAttributes
+ sub : f5aa60ba-0
+ email_verified : false
+ name : nic
+ custom:cashierCode : 1234
+ phone_number_verified : true
+ phone_number : +668166844
+ email : test@gmail
+UserCreateDate : 1606995525.734
+UserLastModifiedDate : 1606995533.461
+Enabled : True
+UserStatus : CONFIRMED
+ResponseMetadata
+ RequestId : ec6ffad2-1
+ HTTPStatusCode : 200
+ HTTPHeaders
+  date : Thu, 03 De
+  content-type : applicatio
+  content-length : 468
+  connection : keep-alive
+  x-amzn-requestid : ec6ffad2-1
+ RetryAttempts : 0
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     {% endraw %}
 
@@ -259,6 +403,29 @@ nb_path: "index.ipynb"
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>{&#39;ResponseMetadata&#39;: {&#39;RequestId&#39;: &#39;e878f2d6-d1de-487c-8a0a-484072b82309&#39;,
+  &#39;HTTPStatusCode&#39;: 200,
+  &#39;HTTPHeaders&#39;: {&#39;date&#39;: &#39;Thu, 03 Dec 2020 11:38:54 GMT&#39;,
+   &#39;content-type&#39;: &#39;application/x-amz-json-1.1&#39;,
+   &#39;content-length&#39;: &#39;2&#39;,
+   &#39;connection&#39;: &#39;keep-alive&#39;,
+   &#39;x-amzn-requestid&#39;: &#39;e878f2d6-d1de-487c-8a0a-484072b82309&#39;},
+  &#39;RetryAttempts&#39;: 0}}</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -284,6 +451,70 @@ nb_path: "index.ipynb"
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>AccessKeyId : ASIAVX4Z5T
+SecretKey : UbsJ2mlM3z
+SessionToken : IQoJb3JpZ2
+Expiration : 1606999136.0
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="DeleteUser">DeleteUser<a class="anchor-link" href="#DeleteUser"> </a></h2>
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">result</span> <span class="o">=</span> <span class="n">sdk</span><span class="o">.</span><span class="n">deleteUser</span><span class="p">(</span><span class="n">user</span><span class="o">=</span><span class="s1">&#39;nic1&#39;</span><span class="p">)</span>
+<span class="n">printDict</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>ResponseMetadata
+ RequestId : 7e3fc4ac-5
+ HTTPStatusCode : 200
+ HTTPHeaders
+  date : Thu, 03 De
+  content-type : applicatio
+  content-length : 0
+  connection : keep-alive
+  x-amzn-requestid : 7e3fc4ac-5
+ RetryAttempts : 0
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
