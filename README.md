@@ -10,44 +10,83 @@
 
 create an auth object
 
-```
+```python
 from villaAuthSdk.auth import AuthSdk
 from nicHelper.dictUtil import printDict
 ```
 
-```
-authSdk=AuthSdk(user=None,pw=None,region='ap-southeast-1')
+```python
+sdk=AuthSdk(user=None,pw=None,region='ap-southeast-1')
 ## user and pw here are the aws key/secret for your client
 ```
 
+## Create cashier
+
+```python
+sdk.createCashier({
+  'user': 'nic1',
+  'phone': '+66816684442',
+  'pw': '12345678',
+  'name': 'nic',
+  'cashierId': '001'
+})
+```
+
+
+
+
+    {'success': True,
+     'user': 'nic1',
+     'phone': '+66816684442',
+     'pw': '12345678',
+     'name': 'nic',
+     'cashierId': '001'}
+
+
+
 ## login
 
-```
-result=authSdk.auth(user='nic1',pw='12345678')
+```python
+result = sdk.auth(user='nic1',pw='12345678')
 printDict(result)
 ```
 
-    AccessKeyId : ASIAVX4Z5T
-    SecretKey : I1Tt/7LxhM
-    SessionToken : IQoJb3JpZ2
-    Expiration : 1605681332.0
-    AccessToken : eyJraWQiOi
-    ExpiresIn : 3600
-    TokenType : Bearer
-    RefreshToken : eyJjdHkiOi
-    IdToken : eyJraWQiOi
-    NewDeviceMetadata
-     DeviceKey : ap-southea
-     DeviceGroupKey : -lt0cpemm
+# Confirm
+confirm phone/email
 
-
-## Create new user
-
-```
-result=AuthSdk().createUser(user='nic5',phone='+66828773682',pw='12345678',name='nic3')
+```python
+result=sdk.confirm(user='nic1', code= '123')
 printDict(result)
 ```
 
-    success : True
-    user : nic5
+## Get Profile
 
+```python
+result=sdk.getProfile('nic1')
+printDict(result)
+```
+
+## update Profile
+
+```python
+result = sdk.updateProfile(
+  user= 'nic1',
+  attributes= {
+    'custom:cashierCode': '1234'
+  })
+printDict(result)
+```
+
+## set password
+
+```python
+sdk.setPassword(user='nic1',pw='12345678')
+```
+
+## Unauth
+get unauthenticated credentials
+
+```python
+result = sdk.unauth()
+printDict(result)
+```

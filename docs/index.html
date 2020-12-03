@@ -80,11 +80,61 @@ nb_path: "index.ipynb"
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">authSdk</span><span class="o">=</span><span class="n">AuthSdk</span><span class="p">(</span><span class="n">user</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span><span class="n">pw</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span><span class="n">region</span><span class="o">=</span><span class="s1">&#39;ap-southeast-1&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sdk</span><span class="o">=</span><span class="n">AuthSdk</span><span class="p">(</span><span class="n">user</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span><span class="n">pw</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span><span class="n">region</span><span class="o">=</span><span class="s1">&#39;ap-southeast-1&#39;</span><span class="p">)</span>
 <span class="c1">## user and pw here are the aws key/secret for your client</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Create-cashier">Create cashier<a class="anchor-link" href="#Create-cashier"> </a></h2>
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sdk</span><span class="o">.</span><span class="n">createCashier</span><span class="p">({</span>
+  <span class="s1">&#39;user&#39;</span><span class="p">:</span> <span class="s1">&#39;nic1&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;phone&#39;</span><span class="p">:</span> <span class="s1">&#39;+66816684442&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;pw&#39;</span><span class="p">:</span> <span class="s1">&#39;12345678&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;nic&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;cashierId&#39;</span><span class="p">:</span> <span class="s1">&#39;001&#39;</span>
+<span class="p">})</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>{&#39;success&#39;: True,
+ &#39;user&#39;: &#39;nic1&#39;,
+ &#39;phone&#39;: &#39;+66816684442&#39;,
+ &#39;pw&#39;: &#39;12345678&#39;,
+ &#39;name&#39;: &#39;nic&#39;,
+ &#39;cashierId&#39;: &#39;001&#39;}</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -104,36 +154,11 @@ nb_path: "index.ipynb"
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">result</span><span class="o">=</span><span class="n">authSdk</span><span class="o">.</span><span class="n">auth</span><span class="p">(</span><span class="n">user</span><span class="o">=</span><span class="s1">&#39;nic1&#39;</span><span class="p">,</span><span class="n">pw</span><span class="o">=</span><span class="s1">&#39;12345678&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">result</span> <span class="o">=</span> <span class="n">sdk</span><span class="o">.</span><span class="n">auth</span><span class="p">(</span><span class="n">user</span><span class="o">=</span><span class="s1">&#39;nic1&#39;</span><span class="p">,</span><span class="n">pw</span><span class="o">=</span><span class="s1">&#39;12345678&#39;</span><span class="p">)</span>
 <span class="n">printDict</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>AccessKeyId : ASIAVX4Z5T
-SecretKey : I1Tt/7LxhM
-SessionToken : IQoJb3JpZ2
-Expiration : 1605681332.0
-AccessToken : eyJraWQiOi
-ExpiresIn : 3600
-TokenType : Bearer
-RefreshToken : eyJjdHkiOi
-IdToken : eyJraWQiOi
-NewDeviceMetadata
- DeviceKey : ap-southea
- DeviceGroupKey : -lt0cpemm
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -142,7 +167,8 @@ NewDeviceMetadata
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Create-new-user">Create new user<a class="anchor-link" href="#Create-new-user"> </a></h2>
+<h1 id="Confirm">Confirm<a class="anchor-link" href="#Confirm"> </a></h1><p>confirm phone/email</p>
+
 </div>
 </div>
 </div>
@@ -153,7 +179,7 @@ NewDeviceMetadata
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">result</span><span class="o">=</span><span class="n">AuthSdk</span><span class="p">()</span><span class="o">.</span><span class="n">createUser</span><span class="p">(</span><span class="n">user</span><span class="o">=</span><span class="s1">&#39;nic5&#39;</span><span class="p">,</span><span class="n">phone</span><span class="o">=</span><span class="s1">&#39;+66828773682&#39;</span><span class="p">,</span><span class="n">pw</span><span class="o">=</span><span class="s1">&#39;12345678&#39;</span><span class="p">,</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;nic3&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">result</span><span class="o">=</span><span class="n">sdk</span><span class="o">.</span><span class="n">confirm</span><span class="p">(</span><span class="n">user</span><span class="o">=</span><span class="s1">&#39;nic1&#39;</span><span class="p">,</span> <span class="n">code</span><span class="o">=</span> <span class="s1">&#39;123&#39;</span><span class="p">)</span>
 <span class="n">printDict</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
 </pre></div>
 
@@ -161,18 +187,103 @@ NewDeviceMetadata
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
+</div>
+    {% endraw %}
 
-<div class="output_area">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Get-Profile">Get Profile<a class="anchor-link" href="#Get-Profile"> </a></h2>
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>success : True
-user : nic5
-</pre>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">result</span><span class="o">=</span><span class="n">sdk</span><span class="o">.</span><span class="n">getProfile</span><span class="p">(</span><span class="s1">&#39;nic1&#39;</span><span class="p">)</span>
+<span class="n">printDict</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+</pre></div>
+
+    </div>
 </div>
 </div>
 
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="update-Profile">update Profile<a class="anchor-link" href="#update-Profile"> </a></h2>
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">result</span> <span class="o">=</span> <span class="n">sdk</span><span class="o">.</span><span class="n">updateProfile</span><span class="p">(</span>
+  <span class="n">user</span><span class="o">=</span> <span class="s1">&#39;nic1&#39;</span><span class="p">,</span>
+  <span class="n">attributes</span><span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;custom:cashierCode&#39;</span><span class="p">:</span> <span class="s1">&#39;1234&#39;</span>
+  <span class="p">})</span>
+<span class="n">printDict</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="set-password">set password<a class="anchor-link" href="#set-password"> </a></h2>
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sdk</span><span class="o">.</span><span class="n">setPassword</span><span class="p">(</span><span class="n">user</span><span class="o">=</span><span class="s1">&#39;nic1&#39;</span><span class="p">,</span><span class="n">pw</span><span class="o">=</span><span class="s1">&#39;12345678&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Unauth">Unauth<a class="anchor-link" href="#Unauth"> </a></h2><p>get unauthenticated credentials</p>
+
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">result</span> <span class="o">=</span> <span class="n">sdk</span><span class="o">.</span><span class="n">unauth</span><span class="p">()</span>
+<span class="n">printDict</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+</pre></div>
+
+    </div>
 </div>
 </div>
 

@@ -47,7 +47,31 @@ nb_path: "authSdk.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h2 id="AuthSdk" class="doc_header"><code>class</code> <code>AuthSdk</code><a href="https://github.com/thanakijwanavit/pynamologger/tree/master/villaAuthSdk/auth.py#L13" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>AuthSdk</code>(<strong><code>user</code></strong>=<em><code>None</code></em>, <strong><code>pw</code></strong>=<em><code>None</code></em>, <strong><code>sessionToken</code></strong>=<em><code>None</code></em>, <strong><code>region</code></strong>=<em><code>'ap-southeast-1'</code></em>)</p>
+<h2 id="FunctionName" class="doc_header"><code>class</code> <code>FunctionName</code><a href="https://github.com/thanakijwanavit/pynamologger/tree/master/villaAuthSdk/auth.py#L17" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>FunctionName</code>(<strong><code>branch</code></strong>, <strong><code>appName</code></strong>)</p>
+</blockquote>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h2 id="AuthSdk" class="doc_header"><code>class</code> <code>AuthSdk</code><a href="https://github.com/thanakijwanavit/pynamologger/tree/master/villaAuthSdk/auth.py#L23" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>AuthSdk</code>(<strong><code>user</code></strong>=<em><code>None</code></em>, <strong><code>pw</code></strong>=<em><code>None</code></em>, <strong><code>sessionToken</code></strong>=<em><code>None</code></em>, <strong><code>region</code></strong>=<em><code>'ap-southeast-1'</code></em>, <strong><code>branch</code></strong>=<em><code>'dev-blank'</code></em>, <strong><code>appName</code></strong>=<em><code>'villa-employee'</code></em>)</p>
 </blockquote>
 
 </div>
@@ -78,7 +102,33 @@ nb_path: "authSdk.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="auth" class="doc_header"><code>auth</code><a href="https://github.com/thanakijwanavit/pynamologger/tree/master/villaAuthSdk/auth.py#L31" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>auth</code>(<strong><code>user</code></strong>, <strong><code>pw</code></strong>, <strong><code>functionName</code></strong>=<em><code>'villaAuth-Auth-13UCAIBB6FOHA'</code></em>)</p>
+<h2 id="CreateCashier" class="doc_header"><code>class</code> <code>CreateCashier</code><a href="https://github.com/thanakijwanavit/pynamologger/tree/master/villaAuthSdk/auth.py#L47" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>CreateCashier</code>(<strong><code>user</code></strong>:<code>str</code>, <strong><code>phone</code></strong>:<code>str</code>, <strong><code>pw</code></strong>:<code>str</code>, <strong><code>name</code></strong>:<code>str</code>, <strong><code>cashierId</code></strong>:<code>str</code>)</p>
+</blockquote>
+
+<pre><code>CreateCashier(user: str, phone: str, pw: str, name: str, cashierId: str)</code></pre>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="createCashier" class="doc_header"><code>createCashier</code><a href="https://github.com/thanakijwanavit/pynamologger/tree/master/villaAuthSdk/auth.py#L54" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>createCashier</code>(<strong><code>data</code></strong>=<em><code>{}</code></em>, <strong><code>function</code></strong>=<em><code>'createCashier'</code></em>)</p>
 </blockquote>
 
 </div>
@@ -105,7 +155,103 @@ nb_path: "authSdk.ipynb"
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">result</span> <span class="o">=</span> <span class="n">AuthSdk</span><span class="p">()</span><span class="o">.</span><span class="n">auth</span><span class="p">(</span><span class="n">user</span><span class="o">=</span><span class="s1">&#39;nic1&#39;</span><span class="p">,</span><span class="n">pw</span><span class="o">=</span><span class="s1">&#39;12345678&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sdk</span><span class="o">.</span><span class="n">createCashier</span><span class="p">({</span>
+  <span class="s1">&#39;user&#39;</span><span class="p">:</span> <span class="s1">&#39;nic1&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;phone&#39;</span><span class="p">:</span> <span class="s1">&#39;+66816684442&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;pw&#39;</span><span class="p">:</span> <span class="s1">&#39;12345678&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;nic&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;cashierId&#39;</span><span class="p">:</span> <span class="s1">&#39;001&#39;</span>
+<span class="p">})</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>{&#39;error&#39;: {&#39;success&#39;: False, &#39;error&#39;: &#39;user exists&#39;}}</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h2 id="Auth" class="doc_header"><code>class</code> <code>Auth</code><a href="https://github.com/thanakijwanavit/pynamologger/tree/master/villaAuthSdk/auth.py#L62" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>Auth</code>(<strong><code>user</code></strong>:<code>str</code>, <strong><code>password</code></strong>:<code>str</code>)</p>
+</blockquote>
+
+<pre><code>Auth(user: str, password: str)</code></pre>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="auth" class="doc_header"><code>auth</code><a href="https://github.com/thanakijwanavit/pynamologger/tree/master/villaAuthSdk/auth.py#L65" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>auth</code>(<strong><code>user</code></strong>, <strong><code>pw</code></strong>, <strong><code>function</code></strong>=<em><code>'auth'</code></em>)</p>
+</blockquote>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">result</span> <span class="o">=</span> <span class="n">sdk</span><span class="o">.</span><span class="n">auth</span><span class="p">(</span><span class="n">user</span><span class="o">=</span><span class="s1">&#39;nic1&#39;</span><span class="p">,</span><span class="n">pw</span><span class="o">=</span><span class="s1">&#39;12345678&#39;</span><span class="p">)</span>
 <span class="n">printDict</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
 </pre></div>
 
@@ -120,9 +266,9 @@ nb_path: "authSdk.ipynb"
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>AccessKeyId : ASIAVX4Z5T
-SecretKey : Xf7MfDSNNU
+SecretKey : APCDWUXQHN
 SessionToken : IQoJb3JpZ2
-Expiration : 1605782649.0
+Expiration : 1606982179.0
 AccessToken : eyJraWQiOi
 ExpiresIn : 3600
 TokenType : Bearer
@@ -131,8 +277,63 @@ IdToken : eyJraWQiOi
 NewDeviceMetadata
  DeviceKey : ap-southea
  DeviceGroupKey : -lt0cpemm
+userInfo
+ Username : nic1
+ UserCreateDate : 1606963203.881
+ UserLastModifiedDate : 1606978253.219
+ Enabled : True
+ UserStatus : CONFIRMED
+ ResponseMetadata
+  RequestId : 8ee58d45-5
+  HTTPStatusCode : 200
+  HTTPHeaders
+   date : Thu, 03 De
+   content-type : applicatio
+   content-length : 384
+   connection : keep-alive
+   x-amzn-requestid : 8ee58d45-5
+  RetryAttempts : 0
+kwUserAttrib
+ sub : d7ca5125-6
+ name : nic
+ custom:cashierCode : 1234
+ phone_number_verified : true
+ phone_number : +668166844
 </pre>
 </div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Confirm">Confirm<a class="anchor-link" href="#Confirm"> </a></h2><p>confirm phone/email of user by confirmation code</p>
+
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h2 id="Confirm" class="doc_header"><code>class</code> <code>Confirm</code><a href="https://github.com/thanakijwanavit/pynamologger/tree/master/villaAuthSdk/auth.py#L73" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>Confirm</code>(<strong><code>user</code></strong>:<code>str</code>, <strong><code>code</code></strong>:<code>str</code>)</p>
+</blockquote>
+
+<pre><code>Confirm(user: str, code: str)</code></pre>
+
+</div>
+
 </div>
 
 </div>
@@ -152,7 +353,7 @@ NewDeviceMetadata
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="createUser" class="doc_header"><code>createUser</code><a href="https://github.com/thanakijwanavit/pynamologger/tree/master/villaAuthSdk/auth.py#L36" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>createUser</code>(<strong><code>functionName</code></strong>=<em><code>'villaAuth-CreateUser-ECLM1M2B9LPJ'</code></em>, <strong>**<code>kwargs</code></strong>)</p>
+<h4 id="confirm" class="doc_header"><code>confirm</code><a href="https://github.com/thanakijwanavit/pynamologger/tree/master/villaAuthSdk/auth.py#L76" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>confirm</code>(<strong><code>user</code></strong>:<code>str</code>, <strong><code>code</code></strong>:<code>str</code>, <strong><code>function</code></strong>:<code>str</code>=<em><code>'confirm'</code></em>, <strong>**<code>kwargs</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -179,7 +380,7 @@ NewDeviceMetadata
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">result</span><span class="o">=</span><span class="n">AuthSdk</span><span class="p">()</span><span class="o">.</span><span class="n">createUser</span><span class="p">(</span><span class="n">user</span><span class="o">=</span><span class="s1">&#39;nic6&#39;</span><span class="p">,</span><span class="n">phone</span><span class="o">=</span><span class="s1">&#39;+66828773682&#39;</span><span class="p">,</span><span class="n">pw</span><span class="o">=</span><span class="s1">&#39;12345678&#39;</span><span class="p">,</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;nic3&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">result</span><span class="o">=</span><span class="n">sdk</span><span class="o">.</span><span class="n">confirm</span><span class="p">(</span><span class="s1">&#39;nic1&#39;</span><span class="p">,</span> <span class="s1">&#39;123&#39;</span><span class="p">)</span>
 <span class="n">printDict</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
 </pre></div>
 
@@ -193,9 +394,494 @@ NewDeviceMetadata
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>error : Traceback 
+<pre>error
+ pickledb64string : gASVTQUAAA
+ error : confirmati
 </pre>
 </div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h2 id="GetProfile" class="doc_header"><code>class</code> <code>GetProfile</code><a href="https://github.com/thanakijwanavit/pynamologger/tree/master/villaAuthSdk/auth.py#L84" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>GetProfile</code>(<strong><code>user</code></strong>:<code>str</code>)</p>
+</blockquote>
+
+<pre><code>GetProfile(user: str)</code></pre>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="getProfile" class="doc_header"><code>getProfile</code><a href="https://github.com/thanakijwanavit/pynamologger/tree/master/villaAuthSdk/auth.py#L87" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>getProfile</code>(<strong><code>user</code></strong>:<code>str</code>, <strong><code>function</code></strong>:<code>str</code>=<em><code>'getProfile'</code></em>, <strong>**<code>kwargs</code></strong>)</p>
+</blockquote>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">result</span><span class="o">=</span><span class="n">sdk</span><span class="o">.</span><span class="n">getProfile</span><span class="p">(</span><span class="s1">&#39;nic1&#39;</span><span class="p">)</span>
+<span class="n">printDict</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Username : nic1
+UserAttributes
+ sub : d7ca5125-6
+ name : nic
+ custom:cashierCode : 1234
+ phone_number_verified : true
+ phone_number : +668166844
+UserCreateDate : 1606963203.881
+UserLastModifiedDate : 1606977796.225
+Enabled : True
+UserStatus : CONFIRMED
+ResponseMetadata
+ RequestId : 263aff07-3
+ HTTPStatusCode : 200
+ HTTPHeaders
+  date : Thu, 03 De
+  content-type : applicatio
+  content-length : 384
+  connection : keep-alive
+  x-amzn-requestid : 263aff07-3
+ RetryAttempts : 0
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h2 id="UpdateProfile" class="doc_header"><code>class</code> <code>UpdateProfile</code><a href="https://github.com/thanakijwanavit/pynamologger/tree/master/villaAuthSdk/auth.py#L95" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>UpdateProfile</code>(<strong><code>user</code></strong>:<code>str</code>, <strong><code>attributes</code></strong>:<code>dict</code>)</p>
+</blockquote>
+
+<pre><code>UpdateProfile(user: str, attributes: dict)</code></pre>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="updateProfile" class="doc_header"><code>updateProfile</code><a href="https://github.com/thanakijwanavit/pynamologger/tree/master/villaAuthSdk/auth.py#L99" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>updateProfile</code>(<strong><code>user</code></strong>:<code>str</code>, <strong><code>attributes</code></strong>:<code>dict</code>, <strong><code>function</code></strong>:<code>str</code>=<em><code>'updateProfile'</code></em>, <strong>**<code>kwargs</code></strong>)</p>
+</blockquote>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">result</span> <span class="o">=</span> <span class="n">sdk</span><span class="o">.</span><span class="n">updateProfile</span><span class="p">(</span><span class="o">**</span><span class="p">{</span>
+  <span class="s1">&#39;user&#39;</span><span class="p">:</span> <span class="s1">&#39;nic1&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;attributes&#39;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="s1">&#39;custom:cashierCode&#39;</span><span class="p">:</span> <span class="s1">&#39;1234&#39;</span>
+  <span class="p">}</span>
+<span class="p">})</span>
+<span class="n">printDict</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Username : nic1
+UserAttributes
+ sub : d7ca5125-6
+ name : nic
+ custom:cashierCode : 1234
+ phone_number_verified : true
+ phone_number : +668166844
+UserCreateDate : 1606963203.881
+UserLastModifiedDate : 1606978149.418
+Enabled : True
+UserStatus : CONFIRMED
+ResponseMetadata
+ RequestId : 442f9a54-2
+ HTTPStatusCode : 200
+ HTTPHeaders
+  date : Thu, 03 De
+  content-type : applicatio
+  content-length : 384
+  connection : keep-alive
+  x-amzn-requestid : 442f9a54-2
+ RetryAttempts : 0
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h2 id="SetPassword" class="doc_header"><code>class</code> <code>SetPassword</code><a href="https://github.com/thanakijwanavit/pynamologger/tree/master/villaAuthSdk/auth.py#L107" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>SetPassword</code>(<strong><code>user</code></strong>:<code>str</code>, <strong><code>pw</code></strong>:<code>str</code>)</p>
+</blockquote>
+
+<pre><code>SetPassword(user: str, pw: str)</code></pre>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="setPassword" class="doc_header"><code>setPassword</code><a href="https://github.com/thanakijwanavit/pynamologger/tree/master/villaAuthSdk/auth.py#L111" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>setPassword</code>(<strong><code>user</code></strong>:<code>str</code>, <strong><code>pw</code></strong>:<code>str</code>, <strong><code>function</code></strong>:<code>str</code>=<em><code>'setPassword'</code></em>, <strong>**<code>kwargs</code></strong>)</p>
+</blockquote>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sdk</span><span class="o">.</span><span class="n">setPassword</span><span class="p">(</span><span class="n">user</span><span class="o">=</span><span class="s1">&#39;nic1&#39;</span><span class="p">,</span><span class="n">pw</span><span class="o">=</span><span class="s1">&#39;12345678&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>{&#39;ResponseMetadata&#39;: {&#39;RequestId&#39;: &#39;323fd8b0-0aed-479c-9be5-588089a2970d&#39;,
+  &#39;HTTPStatusCode&#39;: 200,
+  &#39;HTTPHeaders&#39;: {&#39;date&#39;: &#39;Thu, 03 Dec 2020 06:50:53 GMT&#39;,
+   &#39;content-type&#39;: &#39;application/x-amz-json-1.1&#39;,
+   &#39;content-length&#39;: &#39;2&#39;,
+   &#39;connection&#39;: &#39;keep-alive&#39;,
+   &#39;x-amzn-requestid&#39;: &#39;323fd8b0-0aed-479c-9be5-588089a2970d&#39;},
+  &#39;RetryAttempts&#39;: 0}}</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="unauth" class="doc_header"><code>unauth</code><a href="https://github.com/thanakijwanavit/pynamologger/tree/master/villaAuthSdk/auth.py#L117" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>unauth</code>(<strong><code>function</code></strong>:<code>str</code>=<em><code>'unauth'</code></em>, <strong>**<code>kwargs</code></strong>)</p>
+</blockquote>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">result</span> <span class="o">=</span> <span class="n">sdk</span><span class="o">.</span><span class="n">unauth</span><span class="p">()</span>
+<span class="n">printDict</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>AccessKeyId : ASIAVX4Z5T
+SecretKey : wW377g9c54
+SessionToken : IQoJb3JpZ2
+Expiration : 1606981946.0
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h2 id="DeleteUser" class="doc_header"><code>class</code> <code>DeleteUser</code><a href="https://github.com/thanakijwanavit/pynamologger/tree/master/villaAuthSdk/auth.py#L124" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>DeleteUser</code>(<strong><code>user</code></strong>:<code>str</code>)</p>
+</blockquote>
+
+<pre><code>DeleteUser(user: str)</code></pre>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="deleteUser" class="doc_header"><code>deleteUser</code><a href="https://github.com/thanakijwanavit/pynamologger/tree/master/villaAuthSdk/auth.py#L127" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>deleteUser</code>(<strong><code>user</code></strong>:<code>str</code>, <strong><code>function</code></strong>:<code>str</code>=<em><code>'deleteUser'</code></em>, <strong>**<code>kwargs</code></strong>)</p>
+</blockquote>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sdk</span><span class="o">.</span><span class="n">deleteUser</span><span class="p">(</span><span class="n">user</span><span class="o">=</span><span class="s1">&#39;nic1&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>{&#39;ResponseMetadata&#39;: {&#39;RequestId&#39;: &#39;656f90bd-4a09-4101-be3a-c8ac0627ed39&#39;,
+  &#39;HTTPStatusCode&#39;: 200,
+  &#39;HTTPHeaders&#39;: {&#39;date&#39;: &#39;Thu, 03 Dec 2020 07:05:51 GMT&#39;,
+   &#39;content-type&#39;: &#39;application/x-amz-json-1.1&#39;,
+   &#39;content-length&#39;: &#39;0&#39;,
+   &#39;connection&#39;: &#39;keep-alive&#39;,
+   &#39;x-amzn-requestid&#39;: &#39;656f90bd-4a09-4101-be3a-c8ac0627ed39&#39;},
+  &#39;RetryAttempts&#39;: 0}}</pre>
+</div>
+
 </div>
 
 </div>

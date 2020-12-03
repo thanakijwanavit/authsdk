@@ -2,9 +2,23 @@
 
 __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
-index = {"AuthSdk": "authSdk.ipynb",
+index = {"FunctionName": "authSdk.ipynb",
+         "AuthSdk": "authSdk.ipynb",
+         "CreateCashier": "authSdk.ipynb",
+         "createCashier": "authSdk.ipynb",
+         "Auth": "authSdk.ipynb",
          "auth": "authSdk.ipynb",
-         "createUser": "authSdk.ipynb"}
+         "Confirm": "authSdk.ipynb",
+         "confirm": "authSdk.ipynb",
+         "GetProfile": "authSdk.ipynb",
+         "getProfile": "authSdk.ipynb",
+         "UpdateProfile": "authSdk.ipynb",
+         "updateProfile": "authSdk.ipynb",
+         "SetPassword": "authSdk.ipynb",
+         "setPassword": "authSdk.ipynb",
+         "unauth": "authSdk.ipynb",
+         "DeleteUser": "authSdk.ipynb",
+         "deleteUser": "authSdk.ipynb"}
 
 modules = ["auth.py"]
 
